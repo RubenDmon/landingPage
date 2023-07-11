@@ -1,0 +1,506 @@
+:root{
+--VeryPaleCyan: hsl(193, 100%, 96%);
+--VeryDarkCyan: hsl(192, 100%, 9%);
+--GrayishBlue: hsl(208, 11%, 55%);
+--Pink: hsl(322, 100%, 66%);
+
+/* heading 600*/
+--poppinsFont: 'Poppins', sans-serif;
+/* body and calls 400 and 700 */
+--openFont: 'Open Sans', sans-serif;
+
+--bgImgMobile:url(images/bg-hero-mobile.svg);
+--bgImgPc:url(images/bg-hero-desktop.svg);
+}
+main{
+    background-color: rgb(245, 245, 245);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body > *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* beggining of the principal page */
+#firstpage{
+    background-image:var(--bgImgMobile) ;
+    background-size: cover;
+    background-color: var(--VeryPaleCyan);
+}
+#firstpage #firstpageHeaderSetion{
+    margin-top:2.5rem;
+    margin-inline: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    /* position: sticky;
+    top:0rem;
+    background-color: var(--VeryDarkCyan); */
+}
+#logoPag{
+    width: 18vh;
+}
+#headerButton{
+    width: 18vh;
+    height: 2.5rem;
+    border-radius: 4rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 6px rgba(169, 169, 169, 0.31);
+    font-family: var(--poppinsFont);
+    font-size: 1rem;
+    border: none;
+    color:var(--VeryDarkCyan);
+}
+#firstpageContentSection{
+    margin-top: 25vh;
+    /* margin-inline: 3.2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#firstpageInfo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex-direction: column;
+    color: var(--VeryDarkCyan);
+}
+
+.firstpageTitle{
+    font-family: var(--poppinsFont);
+    font-size: 5vmax;
+    justify-content: center;
+    margin-top: -1rem;
+}
+#firstpageText{
+    width:78%;
+    height: 10rem;
+    font-size: 2.8vmax;
+    font-family: var(--openFont);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#firstpageBtn{
+    margin-top: 1.5rem;
+    border:none;
+    width: 60%;
+    height: 9vh;
+    background-color: var(--Pink);
+    color: var(--VeryPaleCyan);
+    font-family: var(--poppinsFont);
+    border-radius: 4rem;
+    font-size: 1rem;
+}
+#firstpageImage{
+    margin-top: 6rem;
+    width: 80%;
+}
+/* util here principal page */
+
+/*since here content page*/
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    margin-top: 3rem;
+    background-color: #eee;
+    width: 90%;
+    height: 100vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2rem;
+    box-shadow: 0 0 6px rgba(169, 169, 169, 0.31);
+    overflow: hidden;
+}
+.contentCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+#firstCardImg{
+    margin-top: 2rem;
+    width: 70%;
+}
+.title{
+    margin-top: 4rem;
+    font-family: var(--poppinsFont);
+    color: var(--VeryDarkCyan);
+    font-size: 4vh;
+}
+.description{
+    font-family: var(--openFont);
+    color: var(--GrayishBlue);
+    font-size: 2vh;    
+    margin-inline: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+}
+#secondCardImg{
+    margin-top: 2rem;
+    width: 70%;
+}
+#thirdCardImg{
+    margin-top: 2rem;
+    width: 70%;
+}
+/*until here content*/
+/*since here footer*/
+footer{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap:1rem;
+}
+footer{
+    margin-top: 20rem;
+    background-color: var(--VeryDarkCyan);
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+
+}
+#sigIn{
+    width: 90%;
+    height: 30vmax;
+    z-index: 1;
+    background-color: #eee;
+    position: absolute;
+    top:-5rem;
+    left:5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+#sigIn h3{
+color: var(--VeryDarkCyan);
+font-family: var(--poppinsFont);
+font-size:  3vh;
+}
+#sigIn button{
+    margin-top: 1.5rem;
+    border:none;
+    width: 80%;
+    height: 3.5rem;
+    background-color: var(--Pink);
+    color: var(--VeryPaleCyan);
+    font-family: var(--poppinsFont);
+    border-radius: 4rem;
+    font-size: 1rem;
+}
+.contact{
+    margin-top: 30vmax;
+}
+
+.logoleft{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap:1rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+}
+#mensaje{
+    width: 4rem;
+}
+.logoleft h2{
+    font-family: var(--poppinsFont);
+    font-size: 2.5rem;
+    color: #eee;
+    margin:0;
+}
+.contact p{
+    color: #eee;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    margin:0;
+}
+#options{
+margin-left: 1rem;
+font-size: 2rem;
+color:#eee;
+display: flex;
+justify-content: start;
+flex-direction: column;
+}
+#redes{
+    margin-left: 25vw;
+}
+.icon{
+    width: 3.5rem;
+}
+#copy{
+    color:#eee;
+    margin-top: 20vh;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+.attribution{
+    color:#eee;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+}
+a{
+    text-decoration: none;
+    color:#eee;
+}
+button:hover{
+    cursor: pointer;
+    border: 100px solid blueviolet;
+}
+a:hover{
+    cursor: pointer;
+}
+
+/* desktop */
+
+@media (width>1439px) {
+    main{
+        width: 100%;
+    }
+
+    /* beggining of the principal page */
+    #firstpage #firstpageHeaderSetion{
+        margin-top:6vh;
+        margin-inline: 8vw;
+    }
+    #logoPag{
+        width: 13vmax;
+    }
+    #headerButton{
+        width: 19vmax;
+        height: 2.8vmax;
+        font-size: 1.3vmax;
+        transition: all 0.3s ease ;
+    }
+    #firstpage{
+        background-image:var(--bgImgPc) ;
+    }
+
+    #firstpageContentSection{
+        margin-top: 11vh;
+        /* margin-inline: 3.2rem; */
+        margin-left: 5rem;
+        align-items: center;
+        flex-direction: row;
+
+    }
+    #firstpageInfo{  
+        margin-left: 1rem;
+        align-items: start;
+        justify-content: center;
+    }
+    .firstpageTitle{
+        font-size: 3vmax;
+        height: 3rem;
+    }
+    #firstpageText{
+        font-size: 1.2vmax;
+        text-align: left;
+        align-items: start;
+        height: 4rem;
+    }
+    #firstpageBtn{
+        margin-top: 4vmax;
+        width: 50%;
+        height: 4vmax;
+        font-size: 1.2vmax;
+    }
+    #firstpageImage{
+        margin-top: 0rem;
+        margin-right: 6rem;
+        width: 45%;
+    }
+    /* util here principal page */
+    
+    .card{
+        align-items: start;
+        justify-content: start;
+        flex-direction: row;
+        gap:10rem;
+        position: relative;
+        margin-top: 14vmax;
+        width: 80%;
+        height: 42vmax;
+    }
+    .contentCard{
+        justify-content: start;
+        align-items: start;
+    }
+    #firstCardImg{
+        margin-top: 2rem;
+        width: 40%;
+        position: absolute;
+        left:55%;
+    }
+    .title{
+        margin-top: 18vh;
+        font-family: var(--poppinsFont);
+        color: var(--VeryDarkCyan);
+        font-size: 2vmax;
+        margin-left: 10vw;
+    }
+    .description{
+        font-size: 1.2vmax;    
+        margin-inline: 0rem;
+        margin-left: 10vw;
+        margin-right: 38vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    #secondCardImg{
+        margin-top: 2rem;
+        width: 40%;
+        position: absolute;
+        left:0%;
+    }
+    #uniquedescription{
+        margin-left: 30vw;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+    #uniquedescriptionreset{
+        margin-inline: 0rem;
+        margin-left: 10vw;
+        margin-right: 5vw;
+    }
+    #thirdCardImg{
+        margin-top: 2rem;
+        width: 40%;
+        position: absolute;
+        left:55%;
+    }
+
+    /* hasta aca el contenido */
+    footer{
+        height: 80vh;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap:1rem;
+        flex-direction: row; 
+    }
+    #sigIn{
+        width: 50%;
+        left:25vw;
+        top:-10vw;
+        height: 40vh;
+    }
+
+        #sigIn button{
+            height: 7vh;
+            font-size: 1vmax;
+        }
+        .contact{
+            margin-top: 12vmax;
+            width: 45vw;
+        }
+        
+    .logoleft{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        gap:1rem;
+        margin-left: 1rem;
+        margin-top: 1.5rem;
+    }
+    .logoleft img{
+        margin:0.5vmax;
+        width: 1.2vmax;
+    }
+    #mensaje{
+        width: 3.5vmax;
+    }
+    .logoleft h2{
+        font-family: var(--poppinsFont);
+        font-size: 2.7vmax;
+        color: #eee;
+        margin:0;
+    }
+    .logoleft{
+        margin-right: 12rem;
+    }
+    .contact p{
+        color: #eee;
+        margin-right: 0rem;
+        font-size: 1.5vmax;
+        margin:0;
+ 
+    } 
+    #options{
+    width: 40vw;
+    margin-top: 15vmax;
+    margin-left: 0rem;
+    font-size: 2vmax;
+    color:#eee;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap:2rem;
+    }
+    #redes{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 20vmax;
+        margin-left: 0rem;
+        margin-right: 5rem;
+        gap:1rem;
+    }
+    .icon{
+        width: 3.5vmax;
+    }
+    #copy{
+        color:#eee;
+        margin-left: 0rem;
+        font-size: 1vmax;
+        position: absolute;
+        top:70%;
+        left:2%;
+    }
+    .attribution{
+        color:#eee;
+        margin-left: 0rem;
+        font-size: 1vmax;
+        position: absolute;
+        top:93%;
+        left:78%;
+    }
+}
